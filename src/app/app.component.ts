@@ -16,9 +16,13 @@ export class AppComponent implements OnInit {
       title: 'Usuário',
       url: 'user',
       icon: 'person'
+    },
+    {
+      title: 'Tarefas',
+      url: 'tarefas',
+      icon: 'clipboard'
     }
   ];
-  public labels = ['Wagner', 'Eduardo', 'Lucas', 'Regis', 'Guilherme', 'Wellington'];
 
   constructor(
     private platform: Platform,
