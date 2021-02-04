@@ -5,17 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './list-users.page.html',
   styleUrls: ['./list-users.page.scss'],
 })
-export class ListUsersPage implements OnInit {
+export class ListUsersPage {
 users:any[]=[];
   constructor() { 
     
   }
-
-  ngOnInit() {
-    let usersJson = localStorage.getItem('userDb');
+ ionViewWillEnter(){
+      let usersJson = localStorage.getItem('userDb');
     if (usersJson!=null) {
       this.users = JSON.parse(usersJson);
     }
   }
+ 
+
 
 }

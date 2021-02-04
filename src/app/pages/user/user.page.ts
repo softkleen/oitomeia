@@ -15,6 +15,11 @@ senha:string;
 users:any[]=[];
 
   constructor(private route: Router, private toastCtrl: ToastController) { 
+    let usersJson = localStorage.getItem('userDb');
+    //console.log(tarefasJson);
+    if (usersJson!=null) {
+      this.users = JSON.parse(usersJson);
+    }
   }
 
   ngOnInit() {
