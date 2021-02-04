@@ -16,22 +16,23 @@
 <ion-card>
   <ion-item>
     <ion-label position="floating">Nome</ion-label>
-    <ion-input ></ion-input>
+    <ion-input [(ngModel)]="nome"></ion-input>
   </ion-item>
   <ion-item >
     <ion-label position="floating">Email</ion-label>
-    <ion-input type="email"></ion-input>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Senha</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
   </ion-item>
   
-  <ion-button class="center" color="danger">Cancelar</ion-button>
-  <ion-button class="center" color="success">Salvar</ion-button>
+  <ion-button class="center" color="danger" (click)="cancelar()">Cancelar</ion-button>
+  <ion-button class="center" color="success" (click)="salvar()">Salvar</ion-button>
 
 
 </ion-card>
+
 
 
 </ion-content>

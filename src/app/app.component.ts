@@ -18,6 +18,11 @@ export class AppComponent implements OnInit {
       icon: 'person'
     },
     {
+      title: 'Lista de Usuários',
+      url: 'list-users',
+      icon: 'people'
+    },
+    {
       title: 'Tarefas',
       url: 'tarefas',
       icon: 'clipboard'

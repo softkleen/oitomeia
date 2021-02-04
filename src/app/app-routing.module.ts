@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'tarefas',
     loadChildren: () => import('./pages/tarefas/tarefas.module').then( m => m.TarefasPageModule)
+  },
+  {
+    path: 'list-users',
+    loadChildren: () => import('./pages/list-users/list-users.module').then( m => m.ListUsersPageModule)
   }
 ];
 
