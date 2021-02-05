@@ -10,7 +10,8 @@ export class BuscacepService {
   constructor(private http:HttpClient) { }
 
 obterEndereco(cep: string){
-let url = "http://cep.republicavirtual.com.br/web_cep.php?cep="+cep+"&formato=json";
+//let url = "http://cep.republicavirtual.com.br/web_cep.php?cep="+cep+"&formato=json";
+let url = "https://viacep.com.br/ws/"+cep+"/json";
 return this.http.get(url).toPromise();
 }
 
