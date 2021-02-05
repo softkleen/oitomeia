@@ -26,6 +26,11 @@ export class AppComponent implements OnInit {
       title: 'Tarefas',
       url: 'tarefas',
       icon: 'clipboard'
+    },
+    {
+      title: 'Busca Cep',
+      url: 'cep',
+      icon: 'map'
     }
   ];
 

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Consulta CEP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<ion-item>
+  <ion-label position="floating">informe o CEP</ion-label>
+  <ion-input type="text" [(ngModel)]="cep"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-button color="success" expand="block" (click)="consultarCep()">Consultar</ion-button>
+</ion-item>
+
+<ion-item-divider color="light"></ion-item-divider>
+<ion-item>
+  <ion-label>Logradouro</ion-label>
+    <p>{{resultado.tipo_logradouro}} {{resultado.logradouro}}</p>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bairro</ion-label>
+    <p>{{resultado.bairro}}</p>
+  </ion-item>
+</ion-list>
+</ion-content>
