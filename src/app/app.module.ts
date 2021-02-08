@@ -1,3 +1,4 @@
+import { PostService } from './../services/post.service';
 import { BuscacepService } from './buscacep.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     BuscacepService,
+    PostService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
