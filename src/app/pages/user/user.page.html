@@ -26,6 +26,14 @@
     <ion-label position="floating">Senha</ion-label>
     <ion-input type="password" [(ngModel)]="senha"></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label>Nível</ion-label>
+    <ion-select placeholder="Selecione" [(ngModel)]="nivel">
+      <ion-select-option value="admin">Administrador</ion-select-option>
+      <ion-select-option value="aluno">Aluno</ion-select-option>
+    </ion-select>
+  </ion-item>
+
   
   <ion-button class="center" color="danger" (click)="cancelar()">Cancelar</ion-button>
   <ion-button class="center" color="success" (click)="salvar()">Salvar</ion-button>
